@@ -179,7 +179,6 @@ body {
   background: url("/img/block_1_bcg.png") no-repeat center;
   background-size: cover;
   width: 100%;
-  height: 700px;
   padding-top: 92px;
 }
 
@@ -224,6 +223,7 @@ body {
 .block-top__right {
   margin-left: 52px;
 }
+
 .block-top__text {
   font-family: 'Helvetica Neue', serif;
   font-style: normal;
@@ -241,9 +241,11 @@ body {
   font-size: 31px;
   line-height: 38px;
 }
+
 .block-top__form {
   margin-top: 2.5rem;
 }
+
 .block-top__fields {
   margin-bottom: 1.25rem;
 }
@@ -256,7 +258,8 @@ body {
   border-radius: 25px;
   text-align: center;
 }
-.block-top__input[type="submit"]{
+
+.block-top__input[type="submit"] {
   font-family: 'Source Serif Pro', serif;
   font-style: normal;
   font-weight: 400;
@@ -273,6 +276,7 @@ body {
   line-height: 20px;
   color: #2B2A2A;
 }
+
 .block-top__input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
   font-family: 'Source Serif Pro', serif;
   font-style: normal;
@@ -280,7 +284,8 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #2B2A2A;
-  }
+}
+
 .block-top__input::-moz-placeholder { /* Mozilla Firefox 19+ */
   font-family: 'Source Serif Pro', serif;
   font-style: normal;
@@ -288,7 +293,8 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #2B2A2A;
-  }
+}
+
 .block-top__input:-ms-input-placeholder { /* Internet Explorer 10-11 */
   font-family: 'Source Serif Pro', serif;
   font-style: normal;
@@ -297,6 +303,7 @@ body {
   line-height: 20px;
   color: #2B2A2A;
 }
+
 .block-top__input::-ms-input-placeholder { /* Microsoft Edge */
   font-family: 'Source Serif Pro', serif;
   font-style: normal;
@@ -315,13 +322,14 @@ body {
   color: #2B2A2A;
 }
 
-.block_2{
+.block_2 {
   background: url('/img/block_2_bcgr.png') center no-repeat;
   background-size: cover;
   padding-top: 49px;
 }
+
 .block_2__first-letter,
-.block_2__second-letter{
+.block_2__second-letter {
   font-family: 'Helvetica Neue', serif;
   font-style: normal;
   font-weight: 700;
@@ -329,8 +337,11 @@ body {
   line-height: 93px;
   color: #7A7D7E;
 }
-.block_2__second-letter{  margin-bottom: 30px;
+
+.block_2__second-letter {
+  margin-bottom: 30px;
 }
+
 .block_2__text-center {
   font-family: 'Source Serif Pro', serif;
   font-style: normal;
@@ -339,43 +350,117 @@ body {
   line-height: 65px;
   color: #2B2A2A;
 }
+
 .block_2__img {
   margin-left: 18px;
   z-index: 1;
 }
-.block_2__img::before{
+
+.block_2__img::before {
   content: url("/img/block_2_letter.png");
   position: absolute;
   top: -250px;
   left: 0;
   z-index: -1;
 }
+
 .block_2__img img {
   max-width: 100%;
   height: auto;
   position: relative;
   left: 70px;
 }
+
+.block_2__list {
+  margin-top: 50px;
+  list-style-type: none;
+}
+
+.block_2__list--items {
+  font-family: 'Source Serif Pro', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 41px;
+  color: #2B2A2A;
+  position: relative;
+  padding: 0 0 0 14px;
+}
+
+.block_2__list--items::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -14px;
+  transform: translate(0, -50%);
+  width: 13px;
+  height: 13px;
+  background: #D67A98;
+  border-radius: 50%;
+}
+.block_2__list--items:nth-child(3)::before {
+  top: 25%;
+  left: -14px;
+  transform: translate(0, -25%);
+}
+
+.block_3 {
+  font-family: 'Source Serif Pro', serif;
+  font-style: normal;
+  color: #7576AA;
+  background: url("/img/block_3__bcg.png") center no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 10px 50px 60px 50px;
+}
+.block_3__title {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 68px;
+
+}
+.block_3__text{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.block_3 .card {
+  width: 300px;
+  height: auto;
+}
+.block_3 .card-header{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  color: #2B2A2A;
+  margin-bottom: 3px;
+}
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media screen and (min-width:992px ) {
+@media screen and (min-width: 992px ) {
   .block_2__first-letter,
-  .block_2__second-letter{
+  .block_2__second-letter {
     display: block;
   }
-  .block_2__first-letter{
+
+  .block_2__first-letter {
     margin-right: 150px;
   }
-  .block_2__second-letter{
+
+  .block_2__second-letter {
     margin-left: 50px;
   }
+
   .block_2__text-center {
-    margin-left: 25px;
+    margin-left: 30px;
   }
 }
+
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
